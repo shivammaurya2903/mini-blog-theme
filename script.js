@@ -27,5 +27,3 @@ const scrollLine = document.querySelector('.scroll-line');
       const scrollPercent = (scrollTop / docHeight) * 100;
       scrollLine.style.width = `${scrollPercent}%`;
     });
-
-

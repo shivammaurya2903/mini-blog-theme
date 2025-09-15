@@ -5,29 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>mini-blog-theme-website</title>
   <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
+  
   <header class="site-header">
     <div class="container header-inner">
       <h2 class="logo">|mini-blog|</h2>
       <nav class="nav" aria-label="Main navigation">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#photography">Photography</a></li>
-          <li><a href="#">Design</a></li>
-          <li><a href="#">Travel</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#"><i class="icon-search"></i></a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#photography">Photography</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#travel">Travel</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
-    <div class="scroll-line"></div>
+ 
+  </section>
+  
+   <div class="scroll-line"></div>
   </header>
 
+  
   <section class="hero1" id="home">
     <h2>Best WordPress Blog Themes</h2>
   </section>
 
+
+<section class="container" id="login-section" style="display: none;">
+  <h2>Login</h2>
+  <form id="loginForm" class="login-form">
+    <label for="username">Username:</label>
+    <input type="text" id="username" required />
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" required />
+
+    <button type="submit">Login</button>
+    <p id="login-message"></p>
+  </form>
+</section>
+
+
+  
   <main class="container content">
     <section class="posts">
       <article class="post" data-cat="people travel">
@@ -50,6 +72,7 @@
       </article>
     </section>
 
+    
     <aside class="sidebar">
       <h4>Latest posts</h4>
       <ul class="latest-posts">
@@ -73,11 +96,9 @@
     </aside>
   </main>
 
-  <div id="photography" >
+
+  <section id="photography" class="gallery-section">
     <h2>Photography Showcase</h2>
-  </div>
-  <div class="gallery-section"  >
-    
     <div class="gallery-grid">
       <div class="gallery-card"><img src="images/child1.avif" alt="Photo 1"></div>
       <div class="gallery-card"><img src="images/img4.jpg" alt="Photo 2"></div>
@@ -91,12 +112,72 @@
     </div>
   </section>
 
-  <footer class="site-footer">
-  <div class="container footer-inner">
-    <p>&copy; 2025 Shivam Maurya. All rights reserved.</p> 
+  
+  <div class="hero-content" id="travel">
+    <h1>Travel The World</h1>
+    <p>Discover amazing places and unforgettable adventures</p>
   </div>
-</footer>
 
-  <script src="script.js"> </script>
+ 
+  <section class="destinations">
+    <div class="card">
+      <img src="images/tr3.jpg" alt="Indonesia">
+      <h3>Indonesia</h3>
+      <p>Adventure</p>
+    </div>
+    <div class="card">
+      <img src="images/tr0.avif" alt="Vietnam">
+      <h3>Vietnam</h3>
+      <p>Adventure</p>
+      <p>Vietnam, a country of breathtaking natural beauty and rich cultural tapestry, is a paradise for thrill-seekers and adventure enthusiasts. 
+      </p>
+      <h3>What Makes It an Adventure:</h3>
+      <p>Awe-Inspiring Scenery: Navigate the legendary Ma Pi Leng Pass, often called the "King of Passes," with the turquoise Nho Que River snaking thousands of feet below</p>
+      <p>Ultimate Freedom: Experience the raw, untamed beauty of Vietnam at your own pace, with photo opportunities at every turn.</p>
+      <p>Cultural Immersion: Travel through remote villages and stay in homestays with local families from communities like the Hmong, Tay, and Dao people.</p>
+    </div>
+    
+  </section>
+
+  <section class="blogs">
+    <h2>Latest Travel Blogs</h2>
+    <div class="blog-list">
+      <div class="blog">
+        <img src="images/beach-image.avif" alt="Beach Vacation">
+        <h4>The Best Places For A Beach Vacation</h4>
+        <p>By Shivam Maurya</p>
+      </div>
+      <div class="blog">
+        <img src="images/tr4.jpg" alt="Summer Destination">
+        <h4>Top 8 Must-Visit Summer Destinations</h4>
+        <p>By Shivam Maurya</p>
+        <img src="images/travel1.avif" alt="">
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="newsletter" id="contact">
+    <h2>Subscribe To Newsletter</h2>
+    <form>
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe Now</button>
+    </form>
+  </div>
+
+
+  </section>
+  
+
+
+ 
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2025 Shivam Maurya. All rights reserved.</p> 
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+

@@ -1,0 +1,111 @@
+:root {
+  --clr-primary: #00bcd4;
+  --clr-dark: #2a2828;
+  --clr-light: #f5f5f5;
+  --clr-white: #fff;
+  --clr-bg: #eaeaea;
+  --ff-heading: 'Playfair Display', serif;
+  --ff-body: 'Montserrat', sans-serif;
+  --transition: 0.3s ease;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+  scroll-padding: 80px;
+}
+body {
+  margin: 0;
+  font-family: var(--ff-body);
+  background: url('images/sea\ images.jpg') center/cover no-repeat fixed;
+  position: relative;
+  color: var(--clr-white);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); 
+  backdrop-filter: blur(6px);
+  z-index: 0;
+}
+
+
+#login-section, .site-header {
+  position: relative;
+  z-index: 1;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--ff-heading);
+    margin-bottom: 20px;
+    
+}
+
+.login-heading {
+  font-family: var(--ff-heading);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--clr-primary);
+}
+
+
+.login-form {
+  background: rgba(18, 18, 18, 0.85); 
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  max-width: 400px;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-form label {
+  font-weight: 600;
+  color: var(--clr-white);
+}
+
+.login-form input {
+  padding: 0.75rem;
+  border: 1px solid var(--clr-primary);
+  border-radius: 6px;
+  background-color: #1e1e1e;
+  color: var(--clr-white);
+}
+
+.login-form button {
+  padding: 0.75rem;
+  background: var(--clr-primary);
+  color: var(--clr-dark);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.login-form button:hover {
+  background: #0097a7;
+}
+
+#login-message {
+  margin-top: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--clr-primary);
+}
